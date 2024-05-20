@@ -121,7 +121,7 @@ ul li:hover ul.lista{
 }
 #servicios{
 	display: grid;
-	grid-template-columns: repeat(3,400px);
+	grid-template-columns: repeat(3,500px);
 	background-color: rgb(135, 19, 202);
 }
 #servicios img{ 
