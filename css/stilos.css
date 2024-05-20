@@ -5,7 +5,7 @@
   
   
 }
-
+/* Estilos del nav */
 nav{
 	border: 1px solid #161818;
 	border-radius: 5px;
@@ -15,6 +15,7 @@ nav{
 	background-color: rgb(135, 19, 202);
 	
 }
+/* Estilo al logo  */
 ul li img{
 	width: 50px;
 	height: 50px;
@@ -48,6 +49,7 @@ ul li ul.lista li{
 	
 	
 }
+/* esto nos va a servir para usar el hover. */
 ul li ul.lista {
 	width: 100%;
 	background-color: #5f20f191;
