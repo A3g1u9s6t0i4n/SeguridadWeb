@@ -1,0 +1,332 @@
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+  
+  
+}
+/* Estilos del nav */
+nav{
+	border: 1px solid #161818;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(135, 19, 202);
+	
+}
+/* Estilo al logo  */
+ul li img{
+	width: 50px;
+	height: 50px;
+	
+}
+ul{
+	list-style: none;
+	
+
+}
+ul li{
+	display: inline-block;
+	position: relative;
+	
+}	
+	
+
+ul li a{
+	display: block;
+	padding: 5px 5px;
+	text-decoration: none;
+	font-size: 20px;
+	
+	
+}
+/* le damos estilo a los li dentro del ul.lista 
+block para que se separen el bloques y los centramos */
+ul li ul.lista li{
+	display: block;
+	text-align: center;
+	font-size: 40px;
+	
+	
+}
+/* al ul dentro del li le ponemos una posicion absoluta para poder modificarla con mas libertad y ponemos el index : 999 para 
+que al pasarle el mouse tenga otro estilo  */
+ul li ul.lista {
+	width: 100%;
+	background-color: #5f20f191;
+	position: absolute;
+	z-index: 999;
+	display: none;
+}
+
+ul li a:hover{
+	background-color: #5f20f191;
+	
+
+}
+/* al pasar el mouse por el li la clase lista tendra un display block para que todos estos elementos queden separados */
+ul li:hover ul.lista{
+	display: block;
+}
+/* añadimos una imganen debajo de navegador */
+.inicio {
+	width: 100%;
+	height: 600px;
+	background-image: url(../imagenes/Fondo.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	
+}
+/* le damos estilo a la clase nosotros */
+.nosotros
+{
+	border-radius: 10px;
+	color: white;
+	background-color: rgb(135, 19, 202);
+	
+}
+/* ajustamos la imagen del logo */
+.nosotros .logo{
+	height: 100px;
+	height: 150px;
+	display: flex;
+	margin: auto;
+}
+/* modificamos todos los p de la clase nosotros */
+.nosotros p{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 20px;	
+}
+/* modificamos el resto de imagenes */
+.nosotros img{
+	height: 150px;
+	width: 150px;
+	display: flex;
+	margin: auto;
+}
+
+/* le damos estilo a los p dentro del id nosotros */
+#servicios p
+{
+	text-align: center;
+	margin: 10px 0px;
+	font-size: 30px;
+	font-weight: bold;	
+}
+/* le damos estilo al id servicios, usamos el display:grid para poder dividir  */
+#servicios{
+	display: grid;
+	grid-template-columns: repeat(3,405px);
+	background-color: rgb(135, 19, 202);
+	width: 100%;
+}
+/* ajustamos las imagenes */
+#servicios img{ 
+	display: flex;
+    margin: auto;
+	width: 396px;
+	height: 300px;
+	border-radius: 20px;
+
+} 
+/* le damos estilo a la clase vermas que contiene un boton */
+.vermas
+{
+	display: flex;
+	justify-content: center;
+	margin : 30px;
+	
+
+}
+/* modificamos el a que esta dentro del boton para que quede mejor
+le sacamos la decoracion,le damos mayusacula a la primera letra y le damos un tamaño de 40px */
+.vermas a
+{
+	text-decoration: none;
+    font-variant: small-caps;
+	font-size: 40px;
+	
+	
+	
+}
+/* le damos estilo al boton */
+.vermas button 
+{
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: blue;
+	padding: auto;
+	
+	
+}
+/* El boton va a cambiar de color al pasarle el mouse por ensima */
+.vermas button:hover{
+	background-color: rgb(46, 28, 122);
+	
+	
+}
+/* configuramos todos los id con imagnes  */
+#camaras,#Alarmas,#CercosEléctricos{
+	margin-bottom: 50px ;
+	border-radius: 5px;
+    
+}
+/* Le damos estio al id presupuesto que contendra las opciones para calcuar nuestro presupuesto */
+#presupuesto
+{
+	border-radius: 10px;
+	background-color: rgb(135, 19, 202);
+
+
+}
+
+
+
+
+h1
+{
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+
+#presupuesto p
+{
+	text-align: center;
+	font-size: 40px;
+	
+}
+#presupuesto input 
+{
+	display: flex;
+	margin: auto;
+	width: 20px;
+}
+#Alarma-Opcion,#Camara-Opcion,#Cerca-Opcion
+{
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	height: 20px;
+	font-size: 17px;
+
+}
+.opciones 
+{
+	display: flex;
+	justify-content: center;
+	margin: 15px;
+	
+	
+}
+select,option
+{
+	color: black;
+	
+}
+
+
+.calcular
+{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+.calcular button
+{
+	
+	background-color: rgb(255, 8, 8);
+	width: 300;
+	height: 30px;
+	border-radius: 5px;
+	font-weight: bold;
+
+
+	
+}
+.calcular button:hover
+{
+ text-align: center;
+ background-color: rgb(71, 66, 143);
+ 
+}
+
+#contacto
+{
+	
+	border-radius: 10px;
+	border: 2px solid beige;
+	background-color: rgb(135, 19, 202);
+	
+}
+
+.imagen{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+
+
+}
+
+.redes
+{
+	display: flex;
+	justify-content: center;
+	
+	
+}
+.redes img
+{
+	width: 50px;
+	height: 50px;
+	margin: 10px 15px;
+}
+#contacto p{
+	text-align: center;
+	margin: 15px 0px ;
+}
+
+
+/* usamos el media para adaptarlo a un celular de 375px */
+@media (max-width : 375px) {
+ body 
+ {
+	width: 375px;
+ }
+ 
+.inicio {
+	width: 100%;
+	height: 600px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	
+}
+/* servicios pasa de estar en grilla a estar en vertical  */
+ #servicios
+ {
+	display: flex;
+	flex-direction: column;
+ }
+ /* adapatamos la imagenes de servicio */
+ #servicios img{ 
+	display: flex;
+    margin: auto;
+	width: 300px;
+	height: 200px;
+	border-radius: 20px;
+
+} 
+	
+}
+
+
